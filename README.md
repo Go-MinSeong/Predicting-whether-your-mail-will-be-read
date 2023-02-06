@@ -14,34 +14,36 @@
 
 ## **사용자 기반 네이버 메일 알림 시스템 방법론**
 
-* [1. 네이버 메일 자동 로그인]
+* 1. 네이버 메일 자동 로그인
 
-* [ 2. 크롤링을 통한 사용자의 메일 데이터를 수집] <br/>
+*  2. 크롤링을 통한 사용자의 메일 데이터를 수집 <br/>
     (읽음 여부, 발신인, 메일 제목, 발신 날짜)  <br/>
     메일 5000개 당 약 한 시간 소요
     
     
-* [ 3. 데이터 전처리] <br/>
+*  3. 데이터 전처리 <br/>
     읽음 여부는 읽은 메일을 1, 읽지 않은 경우 0 <br/>
     발신인과 메일 제목은 명사 추출 후 이를 활용하여 TF-IDF 벡터화 진행 <br/>
     발신인 메일 제목의 길이를 활용하여 피쳐 사용 <br/>
     발신 날짜는 해당 년도, 월, 시각 이용
 
-* [ 4. imbalanced_data 확인 여부 후, 데이터 resampling ]
+*  4. imbalanced_data 확인 여부 후, 데이터 resampling 
 
-* [ 5. train, validation 데이터 분할]
+*  5. train, validation 데이터 분할
 
-* [ 6. Features selection]
+*  6. Features selection
 
-* [ 7. Modeling ( LGBM Classifier, Logistic Regression 사용 )]
+*  7. Modeling ( LGBM Classifier, Logistic Regression 사용 )
 
-* [ 8. Scoring]
+*  8. Scoring
 
-* [ 9. 사용자 메일 내용 워드 클라우딩]
+*  9. 사용자 메일 내용 워드 클라우딩
 
-![메일 제목 기반 워드클라우드](/Users/gominseong/Desktop/𝒢𝒾𝓉𝒽𝓊𝒷/Predicting-whether-your-mail-will-be-read/Minseong.png)
+![메일 제목 기반 워드클라우드]![Minseong](https://user-images.githubusercontent.com/91547241/216985220-55ca6a36-28ee-4b23-9171-21a5948fb749.png)
 
-![메일 제목 기반 워드클라우드 2](/Users/gominseong/Desktop/𝒢𝒾𝓉𝒽𝓊𝒷/Predicting-whether-your-mail-will-be-read/Minseong2.png)
+
+![메일 제목 기반 워드클라우드 2]![Minseong2](https://user-images.githubusercontent.com/91547241/216985246-1864fec1-c4d9-45dd-bb12-bcc2f5eb23f4.png)
+
 
 
 ## 평가 방법
@@ -53,6 +55,7 @@ Unbalanced data이므로, recall과 precision을 score로 산정
 
 
 ## Result
+
 실제로 수신 확인한 데이터 중 수신 확인할 것이라 예측한 비율 58%
 실제로 수신 확인하지 않은 데이터 중 수신 확인하지 않을 것이라 예측한 비율 76%
 
