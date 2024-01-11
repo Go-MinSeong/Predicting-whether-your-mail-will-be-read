@@ -1,4 +1,4 @@
-# Predicting-whether-your-mail-will-be-read
+<img width="400" alt="image" src="https://github.com/Go-MinSeong/Predicting-whether-your-mail-will-be-read/assets/91547241/f0c550ca-8f59-46ec-817f-ad03ebbd9f89"># Predicting-whether-your-mail-will-be-read
 
 ## 프로젝트 기간
 2022.04 ~ 2022.06 ( 텍스트 데이터 분석 )
@@ -72,13 +72,13 @@ Unbalanced data이므로, recall과 precision을 score로 산정
 
 Header|precision|recall|f1-score|support
 ---|---|---|---|---|
-읽지 않은 메일|0.99|0.76|0.86|1563|
-읽은 메일|0.05|0.58|0.09|33|
+읽지 않은 메일|1.00|0.69|0.81|4451|
+읽은 메일|0.06|0.85|0.11|99|
 
 
 ## Result
 
-실제로 수신 확인한 데이터 중 수신 확인할 것이라 예측한 비율 58%
-실제로 수신 확인하지 않은 데이터 중 수신 확인하지 않을 것이라 예측한 비율 76%
+실제로 수신 확인한 데이터 중 수신 확인할 것이라 예측한 비율 85%
+실제로 수신 확인하지 않은 데이터 중 수신 확인하지 않을 것이라 예측한 비율 69%
 
 아직, 서비스를 위한 성능으로는 부족하다고 느껴지지만, 부족한 데이터 추가적인 피쳐와 모델링을 사용한다면 성능을 더 높일 수 있을 것이라 기대한다.
