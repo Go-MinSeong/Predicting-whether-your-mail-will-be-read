@@ -1,4 +1,4 @@
-<img width="400" alt="image" src="https://github.com/Go-MinSeong/Predicting-whether-your-mail-will-be-read/assets/91547241/f0c550ca-8f59-46ec-817f-ad03ebbd9f89"># Predicting-whether-your-mail-will-be-read
+# Predicting-whether-your-mail-will-be-read
 
 ## 프로젝트 기간
 2022.04 ~ 2022.06 ( 텍스트 데이터 분석 )
